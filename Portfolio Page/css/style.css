@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
+
+ 
+  .header, #first{
+    background-color: rgb(114, 132, 148);
+    height:430px!important;
+  }
+  .header ul{
+    position: relative;
+    left:600px;
+    bottom:80px;
+    width:90%;
+    padding:20px 0px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo{
+    font-size:40px;
+    padding-top:20px;
+    position: relative;
+    left:100px;
+    cursor:pointer;
+  }
+
+  .header ul li{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight:600;
+    letter-spacing: 1px;
+    text-align: center;
+    list-style-type: none;
+    padding:20px 50px;
+    transition: 0.3s;
+    transition-property: #251e35;
+    cursor:pointer;
+  }
+
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #2e1212;}
+
+  .contact{
+    color:white;
+    text-decoration: none;
+  }
+  #first{
+    margin-top:-200px!important;
+}
+
+#first h1, h3, h4, p{
+    margin-left:200px;
+}
+
+#first h1{
+    font-size:50px;
+    line-height: 50px;
+    color:#fff;
+}
+
+#first h4{
+    font-size:10px;
+    color:#dfd8d8;
+    margin-bottom:10px;
+}
+#first h3, h4, p, .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    left:200px;
+    bottom:100px;
+}
+
+#first h3{
+    font-size:30px;
+    color:rgb(253, 244, 244);
+    font-weight:100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#first p{
+    margin-top:40px;
+    margin-right:-140px;
+}
+
+.hero-img{
+    width:400px;
+    height:400px;
+    border:1px solid white;
+    margin: 50px auto;
+}
+.about{
+    margin-top:20px;
+    color:rgb(218, 199, 241);
+    transition: 0.3s;
+    transition-property: #251e35;
+}
+
+.about:hover{
+    color:#251e35;
+}
+
+.wrapper{
+    position: relative;
+    bottom:300px;
+    left:200px;
+    font-size:30px;
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.fab{
+    color:#dfd8d8;
+}
+.fab:hover{
+    color:#2e1212;
+}
+
+.fa-arrow-right{
+    position:relative;
+    color:#000;
+    top:200px;
+    right:20px;
+}
+
+.main{
+    background-color: rgba(102, 85, 85, 0.445);
+    min-height:100vh;
+}
+
+.main h3{
+    text-align: center;
+    font-size:40px;
+    text-transform: capitalize;
+    position:relative;
+    padding-top:60px;
+    left:-100px;
+}
+
+.main p{
+    position:relative;
+    bottom:-20px;
+    left:-100px;
+}
+
+.main a{
+    margin-left:100px;
+    color:#dfd8d8;
+    padding:90px;
+    text-align: center;
+    font-size:30px;
+}
+
+.thei{
+    position:relative;
+    top:80px;
+    left:0px;
+    text-align: left;
+}
+
+
+
+.llist{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left:500px;
+    top:-10px;
+    font-size:25px;
+    color:#000;
+}
+
+.llist span{
+    font-size:50px;
+    color:#fff;
+}
+
+.hss{
+    text-align: center;
+    position: relative;
+    left:50px;
+    font-size:40px;
+    color:rgb(252, 231, 198);
+    margin-top:100px;
+}
+.cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap:100px;
+   
+    
+    margin-top:20px;
+    margin-left: 20px;
+    align-content: stretch;
+    pointer-events: auto;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 150ms ease-in-out;
+}
+.card {
+    margin:auto;
+    height:200px;
+    background-color: #ddd;
+    width:200px;
+    border-radius: 50px;
+    float: left;
+    font-size:20px;
+  }
+  .card{
+    text-align:center;
+    padding:50px;
+  }
+
+    /* Add a shadow for a more realistic effect */
+    .card1:hover {
+        box-shadow: 0 100px 100px rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+        transform: skew(15deg, 15deg);
+    }
+  
+      .card2:hover{
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+      }
+      .card3:hover{
+        background-color: #FFDEE9;
+        background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+      }
+      .card4:hover{
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+
+      .card5:hover{
+        background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+      }
+
+
+
+      /* Keyframes for the card animation */
+      @keyframes grow {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
+  
+      /* Apply the animation on hover */
+      .card:hover {
+        animation: grow 0.3s forwards;
+      }
+  
+      /* Content inside the card */
+      .cards {
+        padding: 20px;
+      }
+
+      .footer{
+        width:100%;
+        height:200px;
+        background-color: #c1c4c3;
+      }
+
+     
+      .footer h4{
+        position:relative;
+        left:-80px;
+        bottom:-90px;
+        text-align: center;
+        color:#2c2323;
+      }
+
+      .fti{
+        position: relative;
+        bottom:-60px;
+        left:600px;
+        right:-200px;
+        font-size:30px;
+        display:flex;
+        flex-direction: row;
+        gap:30px;
+    }
+    
+    .fti .fab{
+        color:#080505;
+    }
+    .fti .fab:hover{
+        color:#887f7f;
+    }
+    
+    .fa-arrow-right{
+        position:relative;
+        color:#000;
+        top:200px;
+        right:20px;
+    }
